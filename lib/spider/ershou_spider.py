@@ -93,7 +93,7 @@ class ErShouSpider(BaseSpider):
                 desc = house_elem.find('div', class_="houseInfo")
                 # pic = house_elem.find('a', class_="img").find('img', class_="lj-lazy")
                 community = house_elem.find('div', class_="positionInfo").find('a')
-                link = house_elem.find('div', class_="positionInfo").find('a').get('href')
+                link = house_elem.find('div', class_="title").find('a').get('href')
 
                 # 继续清理数据
                 price = price.text.strip()
